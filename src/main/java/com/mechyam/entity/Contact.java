@@ -10,8 +10,7 @@ import java.time.LocalDateTime;
 public class Contact {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "contact_seq")
-    @SequenceGenerator(name = "contact_seq", sequenceName = "CONTACT_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
     @NotBlank(message = "Name is required")

@@ -230,8 +230,7 @@ import java.util.List;
 public class Job {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "job_seq")
-    @SequenceGenerator(name = "job_seq", sequenceName = "JOB_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
     @Column(name = "JOB_TITLE", nullable = false)

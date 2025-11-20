@@ -10,8 +10,7 @@ import java.time.LocalDateTime;
 public class JobApplication {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "job_app_seq")
-    @SequenceGenerator(name = "job_app_seq", sequenceName = "JOB_APP_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
     @ManyToOne
